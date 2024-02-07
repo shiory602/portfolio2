@@ -116,6 +116,7 @@ layout
   font-family: "mrblaketon-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
+  text-transform: capitalize;
   font-size: 160px;
   opacity: 0.8;
   line-height: 320px;
@@ -356,6 +357,11 @@ Works
 .article-title {
   margin-bottom: 30px;
   text-align: center;
+  font-size: 72px;
+  font-family: "mrblaketon-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: capitalize;
 }
 
 .article-img {
@@ -402,12 +408,16 @@ Works
 
   /* 見出し */
   .title {
-    font-size: 26px;
+    font-size: 48px;
     margin-bottom: 10px;
   }
   .subtitle {
-    font-size: 22px;
+    font-size: 14px;
     margin-bottom: 40px;
+  }
+  .header-img {
+    position: absolute;
+    top: 0;
   }
 
   /* レイアウト */
@@ -478,9 +488,9 @@ Works
     /* mark */
     .nav_toggle {
       display: block;
-      position: absolute;
-      top: 20px;
-      right: 0;
+      position: sticky;
+      top: 18px;
+      left: 88vw;
       width: 1.75rem;
       height: 1.5rem;
       margin-right: 10px;
