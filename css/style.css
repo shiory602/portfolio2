@@ -315,6 +315,11 @@ Works
 .contact-text {
   margin-top: 10px;
 }
+
+.twitter {
+  width: 600px;
+  margin: 20px auto;
+}
 /*--------------------------------
  ページトップ
 ---------------------------------*/
@@ -563,6 +568,10 @@ Works
     }
 
   /* Works */
+  .works {
+    margin-top: 900px;
+  }
+
   .works-name {
     font-size: 10px;
   }
@@ -628,6 +637,9 @@ Works
   /* コンタクト */
   .lead {
     font-size: 12px;
+  }
+  .twitter {
+    width: 300px;
   }
 
   /* フッター */
