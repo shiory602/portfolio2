@@ -1,303 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-KWVPRRP');
-  </script>
-  <!-- End Google Tag Manager -->
-  <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Shiori Suzuki</title>
-  <!-- Required meta tags -------------------------------------------->
-  <meta charaset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Shiori's portfolio.">
-  <!-- CSS ----------------------------------------------------------->
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <!-- Bootstrap CSS ------------------------------------------------->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <!-- font awesome --------------------------------------------------->
-  <script src="https://kit.fontawesome.com/27c86a747a.js" crossorigin="anonymous"></script>
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-  </script>
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- jQuery Scroll Reveal -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <!-- JS -->
-  <script src="./main.js"></script>
-  <!-- google search console -->
-  <meta name="google-site-verification" content="y0Jz25e1YHiT85nS2rnTyIQW6qYuTZSFdmXDM8HKewA" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='WebデザイナーShiori Soma ポートフォリオ'>
+  <!-- <meta property='og:url' content='URLが入る'> -->
+  <meta property='og:description' content='Shiori Somaのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="Shiori Somaのポートフォリオサイトです" />
+  <title>Shiori Soma Portfolio</title>
+
+    <!-- Adobe fonts -->
+    <script>
+      // クレー
+      (function(d) {
+        var config = {
+          kitId: 'xnq2zqc',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+  
+      // VDL ペンレター
+      (function(d) {
+        var config = {
+          kitId: 'xnq2zqc',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+
+    // MrBlaketon Pro Regular
+    (function(d) {
+    var config = {
+      kitId: 'xnq2zqc',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+    </script>
+
+    <!-- DEVICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+  <link rel="stylesheet" href="./css/ress.css">
+  <link rel="stylesheet" href="./css/style.css">
+          
+  <link rel="shortcut icon" href="img/favicon.ico" />
 </head>
 
-<body onCopy="return false">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWVPRRP" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <!-- START: header --------------------------------------------->
-  <div id="header-md">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="logo-image">
-            <a href="index.html">
-              <img src="img/logo.png" alt="Shiori Logo">
+
+<!-- ここから画面に表示される -->
+<body>
+  <div class="wrapper">
+    
+    <main class="content">
+      
+      <!-- header -->
+      <header>
+        <section id="top">
+          <div class="header-img"></div>
+          <div class="header-inner">
+            <p class="header-title">SOMA</p>
+            <p class="header-title first">SHIORI</p>
+          </div>
+        </section>
+      </header>
+      <!-- /header -->
+      
+      <!-- nav pc -->
+      <nav class="gnav pc-only">
+        <div class="gnav-inner">
+          <ul class="gnav-list">
+            <li class='gnav-item'><a href="index.html">home</a></li>
+            <li class='gnav-item'><a href="./works/works_design.html">works</a></li>
+            <li class='gnav-item'><a href="about.html">about</a></li>
+            <li class='gnav-item'><a href="https://twitter.com/shiorysm" target="_blank">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /nav pc -->
+      <!-- nav sp -->
+      <!-- クリックする３本線の部分 -->
+      <span class="nav_toggle">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+      <!-- クリックで表示されるメニュー -->
+      <nav class="nav sp-only">
+        <ul class="nav_menu_ul">
+          <li class="nav_menu_li"><a class="underline" href="index.html">home</a></li>
+          <li class="nav_menu_li"><a class="underline" href="./works/works_design.html">works</a></li>
+          <li class="nav_menu_li"><a class="underline" href="about.html">about</a></li>
+          <li class="nav_menu_li"><a class="underline" href="https://twitter.com/shiorysm">contact</a></li>
+        </ul>
+      </nav>
+      <!-- /nav sp -->
+
+      <!-- works -->
+      <section class="works section" id="works">
+        <div class="inner">
+
+          <h1 class="title">works</h1>
+          <h2 class="subtitle">-制作実績-</h2>
+
+          <div class="works-design">
+            <div class="works-list">
+              <div class="works-item">
+                <p class="works-img"><img src="./sources/design1.png" alt=""></p>
+                <p class="works-name">オーガニックコスメのバナー</p>
+              </div>
+              <div class="works-item">
+                <p class="works-img"><img src="./sources/design3.png" alt=""></p>
+                <p class="works-name">派遣募集のバナー</p>
+              </div>
+              <div class="works-item">
+                <p class="works-img"><img src="./sources/logo_shemama.png" alt=""></p>
+                <p class="works-name">ママさんコミュニティのロゴ</p>
+              </div>
+            </div>
+
+          <div class="works-list">
+            <a href="./works/works_weatherapp.html" class="works-item">
+              <p class="works-img"><img src="./sources/weather-app.png" alt=""></p>
+              <p class="works-name">Weather app</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+            </a>
+
+            <a href="./works/works_portfolio1.html" class="works-item">
+              <p class="works-img"><img src="./sources/shiorisuzuki.png" alt=""></p>
+              <p class="works-name">First Portfolio</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+            </a>
+
+            <a href="./works/works_portfolio2.html" class="works-item">
+              <p class="works-img"><img src="./sources/shiorisoma.png" alt=""></p>
+              <p class="works-name">Second Portfolio</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
             </a>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="navbar-menu">
-            <ul class="navbar-md">
-              <li class="navbar-item">
-                <a aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="navbar-item">
-                <a href="about.html">About</a>
-              </li>
-              <!-- <li class="navbar-item">
-                <a href="#">Resume</a>
-              </li> -->
-              <li class="navbar-item">
-                <a href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="navbar-item">
-                <a href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="navbar-social">
-            <ul class="navbar-md">
-              <li class="navbar-item-icon">
-                <a href="https://github.com/shiory602" target="_blank">
-                  <i class="fab fa-github-alt"></i>
-                </a>
-              </li>
-              <li class="navbar-item-icon">
-                <a href="https://www.linkedin.com/in/shiorisuzuki" target="_blank">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="navbar-item-icon">
-                <a href="https://twitter.com/shiory602" target="_blank">
-                  <i class="fab fa-twitter-square"></i>
-                </a>
-              </li>
-              <li class="navbar-item-icon">
-                <a href="mailto:suzushioufo@gmail.com" target="_blank">
-                  <i class="fas fa-envelope-square"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- END: header --------------------------------------------->
-  <!-- START: mobile header ------------------------------>
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-light p-4">
-      <h5 class="text-gray h4">
-        <a aria-current="page" href="index.html">Home</a>
-      </h5>
-      <h5 class="text-gray h4">
-        <a href="about.html">About</a>
-      </h5>
-      <!-- <h5 class="text-gray h4">Resume</h5> -->
-      <h5 class="text-gray h4">
-        <a href="portfolio.html">Portfolio</a>
-      </h5>
-      <h5 class="text-gray h4">
-        <a href="contact.html">Contact</a>
-      </h5>
-      <span class="text-muted">
-        <a class="navbar-link" href="https://github.com/shiory602" target="_blank">
-          <i class="fab fa-github-alt"></i>
-        </a>
-      </span>
-      <span class="text-muted">
-        <a class="navbar-link" href="https://www.linkedin.com/in/shiorisuzuki" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </span>
-      <span class="text-muted">
-        <a class="navbar-link" href="https://twitter.com/shiory602" target="_blank">
-          <i class="fab fa-twitter-square"></i>
-        </a>
-      </span>
-    </div>
-  </div>
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
-  <!-- END: mobile header -------------------------------->
-  <main id="page-wrap">
-    <div class="slideshow reveal">
-      <!-------------------- START: Bootstrap carousel ------------------------>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./sources/shiori1.jpg" class="d-block img-fluid slide1" alt="main1">
-                </div>
-                <div class="carousel-item">
-                  <img src="./sources/shiori2.jpg" class="d-block img-fluid slide2" alt="main2">
-                </div>
-                <div class="carousel-item">
-                  <img src="./sources/shiori3.jpg" class="d-block img-fluid slide3" alt="main3">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+
+          <div class="w-btn">
+            <div class="btn">
+              <a href="./works/works_design.html">
+                <h3>more...</h3>
               </a>
             </div>
           </div>
         </div>
-      </div>
-      <!-------------------- END: bootstrap carousel ------------------------->
-    </div>
-    <div class="block">
-      <div class="block-container">
-        <article class="text-content reveal">
-          <h2>Hello, I am Shiori :)</h2>
-          <p>Traveler and Web Developer</p>
-        </article>
-      </div>
-    </div>
-    <div class="block">
-      <div class="block-container">
-        <div class="action-button reveal1">
-          <a class="linkToAbout" href="about.html">Lean more?</a>
-        </div>
-      </div>
-    </div>
+      </section>
+      <!-- /works -->
 
-    <div class="block">
-      <div class="block-container">
-        <div class="divider reveal">
-          <div class="divider--line">
-            <hr>
+      <!-- about -->
+      <section class="about section" id="about">
+        <div class="inner">
+          <h1 class="title">about</h1>
+          <h2 class="subtitle">-わたしのこと-</h2>
+          <div class="profile">
+            <p class="profile-img">
+              <img src="./img/photo.png" alt="">
+            </p>
+            <div class="profile-body">
+              <p class="lead">
+                こんにちは！<br>
+                ポートフォリオをご覧いただき<br class="sp-only">ありがとうございます。<br>
+                <span class="b">「想いを形に」</span><br>
+                あなたの想いに寄り添ったデザインを<br class="sp-only">一緒に考えます。
+              </p>
+            </div>
+          </div>
+          <div class="a-btn">
+            <div class="btn">
+              <a href="./about.html">
+                <h3>my profile</h3>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+      <!-- /about -->
 
-    <div class="block">
-      <div class="block-container">
-        <div class="links-in-column3 reveal">
-          <div class="link-box">
-            <a href="about.html">
-              <span class="link-title">About</span>
-              <span class="link-subtitle">Who I am</span>
-            </a>
-          </div>
-          <div class="link-box">
-            <a href="portfolio.html">
-              <span class="link-title">Portfolio</span>
-              <span class="link-subtitle">My work</span>
-            </a>
-          </div>
-          <div class="link-box">
-            <a href="contact.html">
-              <span class="link-title">Contact</span>
-              <span class="link-subtitle">Work with me</span>
-            </a>
+      <!-- contact -->
+      <section class="contact section" id="contact">
+        <div class="inner">
+          <h1 class="title">contact</h1>
+          <h2 class="subtitle">-お問い合わせ-</h2>
+          <p class="lead">
+            日々の学習や活動を投稿しています。<br>
+            お仕事のご相談、お問合せは<br class="sp-only"> Twitter（X）のDMよりお願いいたします。
+          </p>
+          <div class="contact-list">
+            <a class="contact-item" href="https://twitter.com/shiorysm" target="_blank" rel="noopener"><i class="devicon-twitter-original"></i></a>
+            <a class="contact-item" href="https://www.instagram.com/shiorysm_design" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+            <a href="https://github.com/shiory602" class="contact-item"><i class="devicon-github-original"></i></a>
+            <a class="contact-item" href="./sources/shiorisoma-resume_20220430.docx.pdf" download><i class="bi bi-file-person-fill"></i></a>
           </div>
         </div>
+      </section>
+      <!-- /contact -->
+      
+      <div class="page-top" id="js-page-top">
+        <i class="bi bi-caret-up-fill"></i>
+        <!-- <span class="material-icons-outlined">expand_less</span> -->
       </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row reveal">
-        <div class="col-md-4">
-          <div class="photo-size">
-            <a href="https://shiory602.github.io/Weatherapp-js/" target="_blank">
-              <img class="resize" src="./sources/work-weatherapp.png" alt="Weather app">
-            </a>
-            <span>Weather App</span>
-          </div>
-        </div class="col-md-4">
-        <div class="col-md-4">
-          <div class="photo-size">
-            <a href="https://shiory602.github.io/Currency-converter/" target="_blank">
-              <img src="./sources/work-currencyConverter.png" alt="Currency Converter App">
-              <span>Currency Converter</span>
-            </a>
-          </div>
-        </div class="col-md-4">
-        <div class="col-md-4">
-          <div class="photo-size">
-            <a href="https://shiory602.github.io/MovieBookingApp/" target="_blank">
-              <img src="./sources/work-movieBookingApp.png" alt="Movie Booking App">
-              <span>Movie Booking App</span>
-            </a>
-          </div>
-        </div>
-        <div class="form-button portfolio-link reveal1">
-          <a href="./portfolio.html">Wanna see more App...?</a>
-        </div>
-      </div>
-    </div>
-  </main>
 
-  <footer>
-    <!-- $$$3 line -->
-    <div class="block">
-      <div class="block-container">
-        <div class="divider reveal">
-          <div class="divider--line">
-            <hr>
-          </div>
-        </div>
-      </div>
-    </div>
+    </main>
+  </div>
 
-    <div class="footer-container reveal">
-      <a href="#">
-        <i class="fas fa-arrow-up"></i>
-      </a>
-      <p> © 2021 Shiori Suzuki. All rights reserved.</p>
-    </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="copyright">Copyright&copy;2024 Shiori Soma, All Rights Reserved.</div>
   </footer>
+  <!-- /footer -->
+
+  <!-- ここまで画面に表示される -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
