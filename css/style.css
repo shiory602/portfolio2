@@ -17,6 +17,10 @@ a:hover {
   color: #605452;
 }
 
+.homeLink {
+  text-align: center;
+}
+
 .btn a{
   display: block;
   text-align: center;

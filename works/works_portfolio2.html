@@ -36,15 +36,15 @@
     })(document);
 
 
-    // トツキカナ
+    // MrBlaketon Pro Regular
     (function(d) {
-      var config = {
-        kitId: 'xnq2zqc',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
+    var config = {
+      kitId: 'xnq2zqc',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
     </script>
 
     <!-- DEVICON -->
@@ -64,18 +64,36 @@
 <body>
   <div class="wrapper">
 
-    <!-- gnav -->
-    <!-- <nav class="gnav">
-      <div class="gnav-inner">
-        <ul class="gnav-list">
-          <li class="gnav-item"><a href="../index.html/#works">works</a></li>
-          <li class="gnav-item"><a href="../index.html/#skill">skill</a></li>
-          <li class="gnav-item"><a href="../index.html/#about">about</a></li>
-          <li class="gnav-item"><a href="../index.html/#contact">contact</a></li>
+      <!-- nav sp -->
+      <!-- クリックする３本線の部分 -->
+      <span class="nav_toggle">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+      <!-- クリックで表示されるメニュー -->
+      <nav class="nav sp-only">
+        <ul class="nav_menu_ul">
+          <li class="nav_menu_li"><a class="underline" href="../index.html">home</a></li>
+          <li class="nav_menu_li"><a class="underline" href="works.html">works</a></li>
+          <li class="nav_menu_li"><a class="underline" href="../about.html">about</a></li>
+          <li class="nav_menu_li"><a class="underline" href="https://twitter.com/shiorysm">contact</a></li>
         </ul>
-      </div>
-    </nav> -->
-    <!-- /gnav -->
+      </nav>
+      <!-- /nav sp -->
+      
+      <!-- nav pc -->
+      <nav class="gnav pc-only">
+        <div class="gnav-inner">
+          <ul class="gnav-list">
+            <li class='gnav-item'><a href="../index.html">home</a></li>
+            <li class='gnav-item'><a href="works.html">works</a></li>
+            <li class='gnav-item'><a href="../about.html">about</a></li>
+            <li class='gnav-item'><a href="https://twitter.com/shiorysm" target="_blank">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /nav pc -->
 
     <main class="content">
 
@@ -115,8 +133,9 @@
             </div> -->
           </div>
         </div>
-          <div class="home-link">
-            <a href="../index.html">Works一覧へ</a>
+        <div class="homeLink">
+          <div class="btn">
+            <a href="works.html">Works一覧へ</a>
           </div>
         </div>
       </article>
@@ -129,12 +148,12 @@
 
   <!-- footer -->
   <footer class="footer">
-    <div class="copyright">Copyright&copy;2023 Shiori Soma, All Rights Reserved.</div>
+    <div class="copyright">Copyright&copy;2024 Shiori Soma, All Rights Reserved.</div>
   </footer>
   <!-- /footer -->
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type='text/javascript' src="../javasscript.js"></script>
+  <script type='text/javascript' src="../main.js"></script>
 </body>
 </html>
