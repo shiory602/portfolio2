@@ -35,6 +35,7 @@
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
 
+
     // MrBlaketon Pro Regular
     (function(d) {
     var config = {
@@ -63,20 +64,6 @@
 <body>
   <div class="wrapper">
 
-    <main class="content">
-
-      <!-- nav -->
-      <nav class="gnav pc-only">
-        <div class="gnav-inner">
-          <ul class="gnav-list">
-            <li class='gnav-item'><a href="../index.html">home</a></li>
-            <li class='gnav-item'><a href="works.html">works</a></li>
-            <li class='gnav-item'><a href="../about.html">about</a></li>
-            <li class='gnav-item'><a href="https://twitter.com/shiorysm" target="_blank">contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- /nav -->
       <!-- nav sp -->
       <!-- クリックする３本線の部分 -->
       <span class="nav_toggle">
@@ -94,64 +81,62 @@
         </ul>
       </nav>
       <!-- /nav sp -->
+      
+      <!-- nav pc -->
+      <nav class="gnav pc-only">
+        <div class="gnav-inner">
+          <ul class="gnav-list">
+            <li class='gnav-item'><a href="../index.html">home</a></li>
+            <li class='gnav-item'><a href="works.html">works</a></li>
+            <li class='gnav-item'><a href="../about.html">about</a></li>
+            <li class='gnav-item'><a href="https://twitter.com/shiorysm" target="_blank">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /nav pc -->
+
+    <main class="content">
+
       <article class="article">
         <div class="article-inner">
-          <h2 class="article-title">banner</h2>
-
-
-
-          <div class="works-list">
-            
-            <a class="works-item">
-              <p class="works-img"><img src="../sources/design1.jpeg" alt=""></p>
-              <p class="works-name">オーガニックコスメのバナー</p>
-              <p class="works-info">Design / photoshop</p>
-            </a>
-            <a class="works-item">
-              <p class="works-img"><img src="../sources/design3.png" alt=""></p>
-              <p class="works-name">派遣募集のバナー</p>
-              <p class="works-info">Design / photoshop</p>
-            </a>
-            <a class="works-item">
-              <p class="works-img"><img src="../sources/design2.png" alt=""></p>
-              <p class="works-name">お取り寄せ特集バナー</p>
-              <p class="works-info">Design / photoshop</p>
-            </a>
-            <a class="works-item">
-              <p class="works-img"><img src="../sources/logo_shemama.png" alt=""></p>
-              <p class="works-name">「自主制作」ロゴ</p>
-              <p class="works-info">Design / photoshop</p>
-            </a>
-
-            <div class="works-list">
-              <a href="works_weatherapp.html" class="works-item">
-                <p class="works-img"><img src="../sources/weather-app.jpg" alt=""></p>
-                <p class="works-name">Weather app</p>
-                <p class="works-info">Design / Coding(Responsive)</p>
-              </a>
-  
-              <a href="works_portfolio1.html" class="works-item">
-                <p class="works-img"><img src="../sources/shiorisuzuki.jpeg" alt=""></p>
-                <p class="works-name">First Portfolio</p>
-                <p class="works-info">Design / Coding(Responsive)</p>
-              </a>
-  
-              <a href="works_portfolio2.html" class="works-item">
-                <p class="works-img"><img src="../sources/shiorisoma.png" alt=""></p>
-                <p class="works-name">Second Portfolio</p>
-                <p class="works-info">Design / Coding(Responsive)</p>
-              </a>
-  
-              <a href="works_React-App.html" class="works-item">
-                <p class="works-img"><img src="../sources/React-App.jpeg" alt=""></p>
-                <p class="works-name">ECサイト</p>
-                <p class="works-info">Design / Coding(Responsive)</p>
-              </a>
+          <h2 class="article-title">ECサイト</h2>
+          <p class="article-img">
+            <img src="../sources/React-App.jpeg">
+          </p>
+          <div class="article-body">
+            <p>
+              ■旧姓が鈴木でそのままになっております。
+            </p>
+            <h3 class="article-info-title">URL</h3>
+            <p><a href="https://ecommerceshoppingwebsite.vercel.app/" target="_blank" rel="noopener">https://ecommerceshoppingwebsite.vercel.app/</a></p>
+            <h3 class="article-info-title">担当</h3>
+            <p>デザイン・フロントエンド</p>
+            <h3 class="article-info-title">サイトの目的</h3>
+            <p>
+              カナダのバンクーバー留学中、クラスメイトと一緒に作成した架空のECサイトです。
+            </p>
+            <h3 class="article-info-title">デザインについて</h3>
+            <p>
+              シンプルかつファッショナブルな画像を使用し、商品選択から購入までがスムーズにできるように意識しました。
+            </p>
+            <h3 class="article-info-title">コーディングについて</h3>
+            <p>
+              Reactを使用し、パーツごとにコンポーネントを分けました。また、CSSやJavaScriptを使った動きもつけています。
+            </p>
+            <h3 class="article-info-title">使用した言語</h3>
+            <p>
+              HTML/CSS, SASS, Javascript, React
+            </p>
+            <div class="contact-list">
+              <span>GitHub</span>
+              <a href="https://github.com/shiory602/ecommerceshoppingwebsite" class="contact-item"><i class="devicon-github-original"></i></a>
             </div>
-  
-
           </div>
-
+        </div>
+        <div class="homeLink">
+          <div class="btn">
+            <a href="works.html">Works一覧へ</a>
+          </div>
         </div>
         </div>
       </article>
@@ -164,7 +149,7 @@
 
   <!-- footer -->
   <footer class="footer">
-    <div class="copyright">Copyright&copy;2023 Shiori Soma, All Rights Reserved.</div>
+    <div class="copyright">Copyright&copy;2024 Shiori Soma, All Rights Reserved.</div>
   </footer>
   <!-- /footer -->
 
